@@ -20,9 +20,14 @@
 #         print(f"{key} - {value} \t")
 #     print("\n")
 
-with open("test.txt", "a") as file:
-    file.write("\nhello, Zakhar!3")
+import pandas
 
-with open("test.txt", "r") as file:
-    for line in file:
-        print(line, end= "")
+# with open("tft.txt", "a") as file:
+#    file.write("*.DS_Store")
+
+# with open("test.txt", "r") as file:
+#    for line in file:
+#        print(line, end= "")
+
+df = pandas.read_excel("/Users/zakharden/PycharmProjects/pythonProject/12.xlsx")
+print(df)
